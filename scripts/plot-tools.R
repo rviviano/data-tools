@@ -14,8 +14,12 @@
 #browser()
 
 # TODO: Rewrite functions so that you can pass dataframes by reference rather 
-#       than by value to improve efficiency. Or switch from dataframes to 
-#       data.tables for working with larger datasets.
+#       than by value to improve efficiency. Look into how R handles passing
+#       dataframes to functions, if you can get away without modifying the 
+#       dataframe in the funciton, it might only be a shallow copy. Note (March
+#       16th, 2020): R passes-by-promise; so without modification of a df by a
+#       function, a deep copy will not be made. Modify all functions that do
+#       not actually need to manipulate the dataframe for speed boosts.
 
 # TODO: Allow arbitrary data files as input. Right now the script expects a
 #       Stata .dta file as a command-line argument.
