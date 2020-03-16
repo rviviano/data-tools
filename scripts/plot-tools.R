@@ -14,7 +14,8 @@
 #browser()
 
 # TODO: Rewrite functions so that you can pass dataframes by reference rather 
-#       than by value to improve efficiency.
+#       than by value to improve efficiency. Or switch from dataframes to 
+#       data.tables for working with larger datasets.
 
 # TODO: Allow arbitrary data files as input. Right now the script expects a
 #       Stata .dta file as a command-line argument.
