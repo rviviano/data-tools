@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os, sys, time, traceback
 import multiprocessing as mp
 from multiprocessing import Process, Lock
@@ -21,6 +22,7 @@ def run_embarass_parallel(data_to_process, cores=24):
     ps = {} 
 
     for x in data_to_process:
+        # May need to apply preprocessing prior to argument determination here
         try:
             # Specify arguments to target function
             arguments = (x, print_lock)
